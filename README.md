@@ -4,7 +4,7 @@ This is a script which generates a list of compiler flags from a project with an
 * generate a ```.ycm_extra_conf.py``` file for use with [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
 * generate a ```.color_coded``` file for use with [color_coded](https://github.com/jeaye/color_coded)
 
-It works by building the project with a fake toolchain, which simply and filters compiler flags to be stored in the resulting file.
+It works by building the project with a fake toolchain, which simply filters compiler flags to be stored in the resulting file.
 
 It is reasonably fast, taking ~10 seconds to generate a configuration file for the Linux kernel.
 
@@ -16,7 +16,7 @@ Add ```NeoBundle 'rdnetto/YCM-Generator'``` to your vimrc (or the equivalent for
 
 For [vim-plug](https://github.com/junegunn/vim-plug) users, add ```Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}``` to your vimrc.
 
-Alternatively, Arch Linux users can install YCM-Generator using the (unofficial) [AUR package](https://aur4.archlinux.org/packages/ycm-generator-git/).
+Alternatively, Arch Linux users can install YCM-Generator using the (unofficial) [AUR package](https://aur.archlinux.org/packages/ycm-generator-git/).
 
 ## Usage
 Run ```./config_gen.py PROJECT_DIRECTORY```, where ```PROJECT_DIRECTORY``` is the root directory of your project's build system (i.e. the one containing the root Makefile, etc.)
